@@ -23,7 +23,7 @@ public class UserDAO {
 	}
 	
 	public int login(String userID, String userPassword) {
-		String sql = "select \"userPassword\" FROM USER1 WHERE \"userID\" = '?'";
+		String sql = "SELECT \"userPassword\" FROM USER1 WHERE \"userID\" = '?'";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, userID);
