@@ -3,12 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta charset="UTF-8">
-<title>jsp 게시판</title>
+<title>JSP 게시판</title>
 </head>
-<body>	
+<body>
+	<%
+		session.invalidate();
+	%>
 	<script>
-		location.href = "main.jsp";
+		location.href='main.jsp';
 	</script>
 </body>
 </html>

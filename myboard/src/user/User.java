@@ -1,9 +1,8 @@
 package user;
 
 public class User {
-	
 	private String userID;
-	private String userPassword;
+	private String userPW;
 	private String userName;
 	private String userGender;
 	private String userEmail;
@@ -14,11 +13,11 @@ public class User {
 	public void setUserID(String userID) {
 		this.userID = userID;
 	}
-	public String getUserPassword() {
-		return userPassword;
+	public String getUserPW() {
+		return userPW;
 	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
+	public void setUserPW(String userPW) {
+		this.userPW = userPW;
 	}
 	public String getUserName() {
 		return userName;
