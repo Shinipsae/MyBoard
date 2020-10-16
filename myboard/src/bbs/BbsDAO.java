@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
+
 public class BbsDAO { // 데이터 접근 객체
 
 	private Connection conn = null;
@@ -105,6 +107,41 @@ public class BbsDAO { // 데이터 접근 객체
 			e.printStackTrace();
 		}
 		return false;
+	}
+	
+	public Bbs getBbs(int bbsID) {
+		String sql = "SELECT * FROM BBS WHERE bbsID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bbsID);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				Bbs bbs = new Bbs();
+				bbs.setBbsID(rs.getInt(1));
+				bbs.setBbsTitle(rs.getString(2));
+				bbs.setUserID(rs.getString(3));
+				bbs.setBbsDate(rs.getString(4));
+				bbs.setBbsContent(rs.getString(5));
+				bbs.setBbsAvailable(rs.getInt(6));
+				return bbs;
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public int update(int bbsID, String bbsTitle, String bbsContent) {
+		String sql = "UPDATE BBS SET bbsTitle = ?, bbsContent = ? WHERE bbsID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, bbsTitle);
+			pstmt.setString(2, bbsContent);
+			pstmt.setInt(3, bbsID);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // db오류
 	}
 
 }
