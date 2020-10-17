@@ -24,7 +24,7 @@ public class UserDAO {
 	}
 	
 	public int login(String userID, String userPW) {
-		String sql = "SELECT userPW From jbs.user WHERE userID = ?";
+		String sql = "SELECT userPW From USER WHERE userID = ?";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, userID);
@@ -55,7 +55,7 @@ public class UserDAO {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1; // db ¿À·ù
+		return -1;
 	}
 
 }

@@ -64,6 +64,7 @@
 				else {
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
+					script.println("alert('글이 수정되었습니다.')");
 					script.println("location.href='bbs.jsp'");
 					script.println("</script>");
 				}

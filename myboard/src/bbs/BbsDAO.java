@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
-
 public class BbsDAO { // 데이터 접근 객체
 
 	private Connection conn = null;
@@ -138,10 +136,23 @@ public class BbsDAO { // 데이터 접근 객체
 			pstmt.setString(1, bbsTitle);
 			pstmt.setString(2, bbsContent);
 			pstmt.setInt(3, bbsID);
+			return pstmt.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 		return -1; // db오류
+	}
+	
+	public int delete(int bbsID) {
+		String sql = "UPDATE BBS SET bbsAvailable = 0 WHERE bbsID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bbsID);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1;
 	}
 
 }

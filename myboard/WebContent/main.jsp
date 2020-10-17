@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 게시판</title>
 </head>
 <body>	
@@ -62,6 +63,18 @@
 			%>
 		</div>
 	</nav>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<h1>게시판 만들기</h1>
+				<p>옷을 청춘은 것이 있는 있다. 주며, 하여도 할지라도 커다란 꽃이 위하여 봄바람이다.
+				 얼마나 얼마나 있을 인간의 사막이다. 곳이 어디 열락의 이상의 약동하다. 
+				 공자는 그들의 청춘의 바로 노래하며 곳이 철환하였는가? 
+				크고 있으며, 것은 있는가? 내려온 길을 소리다.이것은 풍부하게 너의 봄바람이다.</p>
+				<p><a class ="btn btn-primary btn-pull" href="#" role="button">자세히 알아보기 </a></p>
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
