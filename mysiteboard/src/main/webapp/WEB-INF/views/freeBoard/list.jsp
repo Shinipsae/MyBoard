@@ -10,7 +10,14 @@
 <body>
 <%@ include file="head.jsp" %>
 <table border="1">
-<tr><th>번호</th><th>제목</th><th>작성자</th><th>등록일</th><th>조회수</th><th>타입</th></tr>
+<tr>
+	<th>번호</th>
+	<th>제목</th>
+	<th>작성자</th>
+	<th>등록일</th>
+	<th>조회수</th>
+	<th>타입</th>
+</tr>
 <c:forEach var="board" items="${result}" varStatus="i">
 <tr>
 	<td>${i.count}</td>

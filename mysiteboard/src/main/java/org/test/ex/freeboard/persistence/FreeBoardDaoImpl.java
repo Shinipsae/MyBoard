@@ -23,7 +23,9 @@ public class FreeBoardDaoImpl implements FreeBoardDao{
 	@Override
 	public List<FreeBoardDto> selectAll() {
 		List<FreeBoardDto> result = jdbcTemplate.query(
-				"select \"SEQ\", \"TITLE\", \"CONTENT\", \"WRITER\", \"PASSWORD\", \"REGDATE\", \"READCNT\", \"BOARDTYPE\" from \"BOARD\" where \"BOARDTYPE\" = ? order by \"REGDATE\" desc", 
+				"select \"SEQ\", \"TITLE\", \"CONTENT\", \"WRITER\", \"PASSWORD\", "
+				+ "\"REGDATE\", \"READCNT\", \"BOARDTYPE\" "
+				+ "from \"BOARD\" where \"BOARDTYPE\" = ? order by \"REGDATE\" desc", 
 				new RowMapper<FreeBoardDto>() {
 
 					@Override

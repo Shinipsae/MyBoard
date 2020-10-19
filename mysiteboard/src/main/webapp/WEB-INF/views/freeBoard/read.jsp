@@ -8,8 +8,20 @@
 </head>
 <body>
 <table border="1">
-	<tr><th>제목</th><th>작성자</th><th>등록일</th><th>조회수</th></tr>
-	<tr><td>${dto.title}</td><td>${dto.writer}</td><td>${dto.regDate}</td><td>${dto.readCnt}</td></tr>
+	<tr>
+	<th>제목</th>
+	<th>작성자</th>
+	<th>등록일</th>
+	<th>조회수</th>
+	</tr>
+	
+	<tr>
+	<td>${dto.title}</td>
+	<td>${dto.writer}</td>
+	<td>${dto.regDate}</td>
+	<td>${dto.readCnt}</td>
+	</tr>
+	
 	<tr><th colspan="4">내용</th></tr>
 	<tr><td colspan="4">${dto.content}</td></tr>
 </table>

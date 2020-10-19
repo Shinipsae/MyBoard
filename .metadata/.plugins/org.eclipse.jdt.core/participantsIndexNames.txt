@@ -5,6 +5,8 @@ C:\Users\user\Desktop\MyBoard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsea
 \exboard\src\main\java
 C:\Users\user\Desktop\MyBoard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\371673628.index
 \mysiteboard\src\main\java
+C:\Users\user\Desktop\MyBoard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3443566698.index
+\exboard\src\main\java
 C:\Users\user\Desktop\MyBoard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1020459766.index
 \myboard\src
 C:\Users\user\Desktop\MyBoard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1603263435.index

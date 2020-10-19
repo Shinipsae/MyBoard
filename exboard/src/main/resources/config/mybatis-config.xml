@@ -14,7 +14,10 @@
 		
 	</settings>
 	<typeAliases>
-		<typeAlias type="a.b.c.domain.BoardVo" alias="BoardVo"/>
+		<typeAlias type="org.test.ex.domain.BoardDto" alias="BoardVo"/>
 	</typeAliases>
-	
 </configuration>
+
+
+
+
